@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/* Custom Lottery Styles */
+:root {
+  --primary: #570df8;
+  --primary-focus: #4506cb;
+  --secondary: #f000b8;
+  --accent: #37cdbe;
+  --neutral: #3d4451;
+  --base-100: #ffffff;
+  --base-200: #f9fafb;
+  --base-300: #e5e7eb;
+  --info: #3abff8;
+  --success: #36d399;
+  --warning: #fbbd23;
+  --error: #f87272;
+}
+
+/* Button Styles */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 font-semibold rounded-lg transition-colors cursor-pointer border-0 outline-none;
+}
+
+.btn-primary {
+  @apply bg-[--primary] text-white hover:bg-[--primary-focus];
+}
+
+.btn-ghost {
+  @apply bg-transparent hover:bg-gray-100 text-gray-700;
+}
+
+.btn-error {
+  @apply bg-[--error] text-white hover:bg-red-600;
+}
+
+.btn-lg {
+  @apply text-lg px-6 py-3;
+}
+
+.btn-sm {
+  @apply text-sm px-3 py-1;
+}
+
+.btn-wide {
+  @apply w-48;
+}
+
+.btn-disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+/* Card Styles */
+.card {
+  @apply rounded-lg overflow-hidden;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.card-title {
+  @apply text-2xl font-bold mb-4;
+}
+
+/* Badge Styles */
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-primary {
+  @apply bg-[--primary] text-white;
+}
+
+.badge-success {
+  @apply bg-[--success] text-white;
+}
+
+.badge-error {
+  @apply bg-[--error] text-white;
+}
+
+.badge-lg {
+  @apply px-4 py-2 text-base;
+}
+
+/* Form Styles */
+.form-control {
+  @apply flex flex-col gap-1;
+}
+
+.label {
+  @apply flex items-center justify-between;
+}
+
+.label-text {
+  @apply text-sm font-medium text-gray-700;
+}
+
+.input {
+  @apply w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[--primary];
+}
+
+.input-bordered {
+  @apply border-gray-300;
+}
+
+/* Stats Styles */
+.stats {
+  @apply grid;
+}
+
+.stat {
+  @apply p-4 bg-white rounded-lg;
+}
+
+.stat-title {
+  @apply text-sm text-gray-500 mb-1;
+}
+
+.stat-value {
+  @apply text-3xl font-bold;
+}
+
+.stat-desc {
+  @apply text-sm mt-1;
+}
+
+/* Table Styles */
+.table {
+  @apply w-full;
+}
+
+.table thead {
+  @apply bg-gray-50 border-b-2 border-gray-200;
+}
+
+.table th {
+  @apply px-4 py-3 text-left text-sm font-semibold text-gray-700;
+}
+
+.table td {
+  @apply px-4 py-3 border-b border-gray-200;
+}
+
+.table tbody tr:hover {
+  @apply bg-gray-50;
+}
+
+/* Background Styles */
+.bg-base-100 {
+  background-color: var(--base-100);
+}
+
+.bg-base-200 {
+  background-color: var(--base-200);
+}
+
+.bg-base-300 {
+  background-color: var(--base-300);
+}
+
+/* Shadow Styles */
+.shadow-xl {
+  @apply shadow-2xl;
+}
+
+/* Gap Styles */
+.gap-2 {
+  @apply gap-2;
+}
+
+.gap-4 {
+  @apply gap-4;
+}
+
+/* Overflow */
+.overflow-x-auto {
+  @apply overflow-x-auto;
+}
